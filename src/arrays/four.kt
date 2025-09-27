@@ -4,7 +4,7 @@ var secondArr = mutableListOf<Int>()
 var whichArr = 0
 var count = 0
 fun main() {
-    input()
+    inputNums()
 
     var resultArr = emptyArray<Int>()
 
@@ -22,7 +22,7 @@ fun main() {
     resultArr = resultArr.sorted().toTypedArray()
     println("Пересечение: ${resultArr.contentToString()}")
 }
-fun input() {
+fun inputNums() {
     if (count < 2)
     println("Введите числа для ${if (whichArr == 0) "первого" else "второго"}" +
             " массива (по 1 за раз, 'q' для прекращения ввода): ")
@@ -35,7 +35,7 @@ fun input() {
         if (input == "q"){
             count++
             whichArr++
-            input()
+            inputNums()
         }
         else {
             if (whichArr == 0)
