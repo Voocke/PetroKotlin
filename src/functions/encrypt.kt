@@ -45,7 +45,7 @@ fun createTable(alphabet: String, useDefault: Boolean): List<String> {
         table.add(firstRow)
 
         val shifts = mutableListOf<Int>()
-        for (i in 1 until alphabet.length) {
+        (1 until alphabet.length).forEach { i ->
             var shift = Random.nextInt(1, alphabet.length)
             while (shifts.contains(shift)) {
                 shift = Random.nextInt(1, alphabet.length)
