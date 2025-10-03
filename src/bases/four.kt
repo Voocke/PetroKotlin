@@ -1,4 +1,4 @@
-package Bases
+package bases
 
 fun main() {
     print("Введите число x: ")
